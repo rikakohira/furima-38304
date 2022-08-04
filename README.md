@@ -33,7 +33,7 @@
 | category_id | integer | null: false | 
 | condition_id | integer | null: false | 
 | shippingfee_id | integer | null: false | 
-| prefectures_id | integer | null: false | 
+| prefecture_id | integer | null: false | 
 | delivery_days_id | integer | null: false | 
 
 
@@ -66,10 +66,10 @@
 | Column                | Type         | Options                   |
 | --------------------- | ------------ | ------------------------- |
 | post_code | string | null: false |                     
-| delivery_prefecture | string | null: false | 
+| prefecture_id | integer | null: false |
 | city | string | null: false | 
 | address | string | null: false | 
-| building | string | null: false | 
+| building | string |  | 
 | phone_number | string | null: false | 
 | order | reference | null: false, foreign_key: true | 
 
