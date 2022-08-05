@@ -72,6 +72,36 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include('Price is not a number')
       end
+      it 'userが紐付いていなければ出品できない' do
+        @item.user = nil
+        @item.valid?
+        expect(@item.errors.full_messages).to include('User must exist')
+      end
+      it 'category_idに「---」が選択されている場合は出品できない' do
+        @item.category_id = '1'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Category can't be blank")
+      end
+      it 'condition_idに「---」が選択されている場合は出品できない' do
+        @item.condition_id = '1'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Condition can't be blank")
+      end
+      it 'shippingfee_idに「---」が選択されている場合は出品できない' do
+        @item.shippingfee_id = '1'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Shippingfee can't be blank")
+      end
+      it 'prefecture_idに「---」が選択されている場合は出品できない' do
+        @item.prefecture_id = '1'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Prefecture can't be blank")
+      end
+      it 'delivery_day_idに「---」が選択されている場合は出品できない' do
+        @item.delivery_day_id = '1'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Delivery day can't be blank")
+      end
     end
   end
 end
