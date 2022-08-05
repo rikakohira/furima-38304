@@ -29,7 +29,7 @@
 | item_name | string | null: false |                     
 | content | text | null: false | 
 | price | integer | null: false | 
-| user | reference | null: false, foreign_key: true | 
+| user | references | null: false, foreign_key: true | 
 | category_id | integer | null: false | 
 | condition_id | integer | null: false | 
 | shippingfee_id | integer | null: false | 
@@ -49,8 +49,8 @@
 
 | Column                | Type         | Options                   |
 | --------------------- | ------------ | ------------------------- |
-| item | reference | null: false, foreign_key: true |                     
-| user | reference | null: false, foreign_key: true | 
+| item | references | null: false, foreign_key: true |                     
+| user | references | null: false, foreign_key: true | 
 
 
 ### Association
