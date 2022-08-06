@@ -120,19 +120,20 @@
   </div>
   <%# /FURIMAの特徴 %>
 
-  <%# 商品一覧 %>
   <div class='item-contents'>
     <h2 class='title'>ピックアップカテゴリー</h2>
     <div class="subtitle" >
       新規投稿商品
     </div>
+    
     <ul class='item-lists'>
+
 
     <% @items.each do |item| %>  
       <li class='list'>
         <%= link_to image_tag(item.image) do %>
         <div class='item-img-content'>
-          <%= image_tag item.image, class: "item-img" %>
+        <%= link_to image_tag(item.image, class: "item-img"), item_path(item.id)%>
 
           <%# 商品が売れていればsold outを表示しましょう %>
           <%#div class='sold-out'>
@@ -143,10 +144,10 @@
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= item.item_name %>
+            <%= link_to item.item_name, item_path(item.id) %>
           </h3>
           <div class='item-price'>
-            <span><%= item.price %>円<br><%= item.shippingfee.name %></span>
+            <span><%= link_to item.price, item_path(item.id) %>円<br><%= link_to item.shippingfee.name , item_path(item.id)%></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
