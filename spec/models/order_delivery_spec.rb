@@ -30,10 +30,10 @@ RSpec.describe OrderDelivery, type: :model do
         @order_delivery.valid?
         expect(@order_delivery.errors.full_messages).to include('Post code is invalid')
       end
-      it 'prefecture_idが空だと保存できないこと' do
-        @order_delivery.prefecture_id = ''
+      it 'prefecture_idが1だと保存できないこ' do
+        @order_delivery.prefecture_id = '1'
         @order_delivery.valid?
-        expect(@order_delivery.errors.full_messages).to include('Prefecture is not a number')
+        expect(@order_delivery.errors.full_messages).to include('Prefecture must be other than 1')
       end
       it 'cityが空だと保存できないこと' do
         @order_delivery.city = ''
@@ -52,6 +52,16 @@ RSpec.describe OrderDelivery, type: :model do
       end
       it 'phone_numberは10桁以上11桁以内の半角数値ではない形式のとき保存できないこと' do
         @order_delivery.phone_number = '123456789123456'
+        @order_delivery.valid?
+        expect(@order_delivery.errors.full_messages).to include('Phone number is invalid')
+      end
+      it 'phone_numberは10桁以上11桁以内の半角数値ではない形式のとき保存できないこと' do
+        @order_delivery.phone_number = '12345'
+        @order_delivery.valid?
+        expect(@order_delivery.errors.full_messages).to include('Phone number is invalid')
+      end
+      it 'phone_numberは10桁以上11桁以内の半角数値ではない形式のとき保存できないこと' do
+        @order_delivery.phone_number = '１２３４５６７８９１'
         @order_delivery.valid?
         expect(@order_delivery.errors.full_messages).to include('Phone number is invalid')
       end
