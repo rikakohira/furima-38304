@@ -5,9 +5,6 @@ RSpec.describe OrderDelivery, type: :model do
     before do
       user = FactoryBot.create(:user)
       item = FactoryBot.create(:item)
-      # @item = FactoryBot.build(:item)
-      # @item.image = fixture_file_upload('public/images/test_image.png')
-      # @item.save
       @order_delivery = FactoryBot.build(:order_delivery, user_id: user.id, item_id: item.id)
       sleep 0.1
     end
@@ -54,10 +51,14 @@ RSpec.describe OrderDelivery, type: :model do
         expect(@order_delivery.errors.full_messages).to include("Phone number can't be blank")
       end
       it 'phone_numberは10桁以上11桁以内の半角数値ではない形式のとき保存できないこと' do
-        binding.pry
         @order_delivery.phone_number = '123456789123456'
         @order_delivery.valid?
         expect(@order_delivery.errors.full_messages).to include('Phone number is invalid')
+      end
+      it "tokenが空では登録できないこと" do
+        @order_delivery.token = nil
+        @order_delivery.valid?
+        expect(@order_delivery.errors.full_messages).to include("Token can't be blank")
       end
     end
   end

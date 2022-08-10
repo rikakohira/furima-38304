@@ -1,7 +1,7 @@
 class OrderDelivery
   include ActiveModel::Model
 
-  attr_accessor :post_code, :prefecture_id, :city, :address, :building, :phone_number, :user_id, :item_id
+  attr_accessor :post_code, :prefecture_id, :city, :address, :building, :phone_number, :user_id, :item_id, :token
 
   with_options presence: true do
     validates :user_id
@@ -10,6 +10,7 @@ class OrderDelivery
     validates :city
     validates :address
     validates :phone_number, format: { with: /\A\d{10}$|^\d{11}\z/ }
+    validates :token
   end
   validates :prefecture_id, numericality: { other_than: 1 }
 
