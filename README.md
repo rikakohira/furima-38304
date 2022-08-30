@@ -1,7 +1,55 @@
+## Furima
 
-# テーブル設計
+フリーマーケットのアプリケーションを作成しました。<br>
+ユーザーを登録すると商品を出品できるようになります。自身が出品した商品は、編集と削除をすることができます。他のユーザーが出品した商品は、クレジットカードを用いて購入することができます。
 
-## usersテーブル
+## 使用技術
+
+- HTML,CSS
+- ruby 2.6.5
+- Ruby on Rails 6.0.0
+- MySQL 14.14
+- AWS
+  - EC2
+- heroku
+- RSpec
+
+## テスト
+
+- RSpec
+  - 単体テスト(model)
+
+## アプリケーションのURL
+
+https://furima-38304.herokuapp.com/
+
+## テスト用アカウント
+
+- ID／Pass
+  - ID：admin
+  - Pass： 2222
+
+- テスト用アカウント等
+  - 購入者用
+    - メールアドレス：a@test
+    - パスワード：111aaa
+    - ユーザー名：hirata
+    - 購入用カード情報
+    - 番号：4242424242424242
+    - 期限：2024年3月
+    - セキュリティコード：123
+  - 出品者用
+    - メールアドレス名：b@test
+    - パスワード：111aaa
+    - ユーザー名：rikako
+
+## データベース設計
+
+[![Image from Gyazo](https://i.gyazo.com/1cf473b5810c7bb61b2719408213b958.png)](https://gyazo.com/1cf473b5810c7bb61b2719408213b958)
+
+## テーブル設計
+
+### usersテーブル
 
 | Column                | Type         | Options                   |
 | --------------------- | ------------ | ------------------------- |
@@ -20,9 +68,7 @@
 - has_many :items
 - has_many :orders
 
-# テーブル設計
-
-## itemsテーブル
+### itemsテーブル
 
 | Column                | Type         | Options                   |
 | --------------------- | ------------ | ------------------------- |
@@ -43,9 +89,7 @@
 - has_one_attached :image
 - has_one :order
 
-# テーブル設計
-
-## ordersテーブル
+### ordersテーブル
 
 | Column                | Type         | Options                   |
 | --------------------- | ------------ | ------------------------- |
@@ -59,9 +103,7 @@
 - belongs_to :user
 - has_one :delivery
 
-# テーブル設計
-
-## deliveriesテーブル
+### deliveriesテーブル
 
 | Column                | Type         | Options                   |
 | --------------------- | ------------ | ------------------------- |
@@ -77,3 +119,4 @@
 ### Association
 
 - belongs_to :order
+
