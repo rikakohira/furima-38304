@@ -45,7 +45,7 @@ https://furima-38304.herokuapp.com/
 
 ## データベース設計
 
-[![Image from Gyazo](https://i.gyazo.com/1cf473b5810c7bb61b2719408213b958.png)](https://gyazo.com/1cf473b5810c7bb61b2719408213b958)
+[![Image from Gyazo](https://i.gyazo.com/ba9a79cd030579fad76fbe29443ba0e1.png)](https://gyazo.com/ba9a79cd030579fad76fbe29443ba0e1)
 
 ## 画面遷移図
 
