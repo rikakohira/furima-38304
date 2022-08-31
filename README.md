@@ -49,7 +49,7 @@ https://furima-38304.herokuapp.com/
 
 ## 画面遷移図
 
-[![Image from Gyazo](https://i.gyazo.com/9d9e2a93b4ea03b779215505ffb87554.png)](https://gyazo.com/9d9e2a93b4ea03b779215505ffb87554)
+[![Image from Gyazo](https://i.gyazo.com/72ef782d815d48a98d956ecf6cd356fb.png)](https://gyazo.com/72ef782d815d48a98d956ecf6cd356fb)
 
 ## テーブル設計
 

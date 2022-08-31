@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="PbEivEJ52fipvO_Zywe6" name="ER図">
-        <mxGraphModel dx="1721" dy="1768" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1467" dy="1668" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -446,7 +446,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="N6ESl2t0CFE4JEtv_oAQ" name="画面遷移図">
-        <mxGraphModel dx="2091" dy="1426" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1900" dy="1351" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="EvjojKm8RSOySv9Axsn9-0"/>
                 <mxCell id="EvjojKm8RSOySv9Axsn9-1" parent="EvjojKm8RSOySv9Axsn9-0"/>
@@ -517,7 +517,7 @@
                         <mxPoint x="-80" y="230" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="EvjojKm8RSOySv9Axsn9-20" value="&lt;font color=&quot;#000000&quot;&gt;商品一覧&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
+                <mxCell id="EvjojKm8RSOySv9Axsn9-20" value="&lt;font color=&quot;#000000&quot;&gt;商品詳細&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
                     <mxGeometry x="-280" y="200" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="EvjojKm8RSOySv9Axsn9-22" value="&lt;font color=&quot;#000000&quot;&gt;購入ページ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
@@ -536,16 +536,16 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="EvjojKm8RSOySv9Axsn9-23" value="&lt;font color=&quot;#000000&quot;&gt;出品商品一覧&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
+                <mxCell id="EvjojKm8RSOySv9Axsn9-23" value="&lt;font color=&quot;#000000&quot;&gt;出品商品詳細&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
                     <mxGeometry x="-280" y="350" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="EvjojKm8RSOySv9Axsn9-25" value="&lt;font color=&quot;#000000&quot;&gt;編集&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
+                <mxCell id="EvjojKm8RSOySv9Axsn9-25" value="&lt;font color=&quot;#000000&quot;&gt;編集ページ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
                     <mxGeometry x="-80" y="350" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="EvjojKm8RSOySv9Axsn9-26" value="&lt;font color=&quot;#000000&quot;&gt;削除&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
                     <mxGeometry x="-80" y="440" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="EvjojKm8RSOySv9Axsn9-28" value="&lt;font color=&quot;#000000&quot;&gt;出品&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
+                <mxCell id="EvjojKm8RSOySv9Axsn9-28" value="&lt;font color=&quot;#000000&quot;&gt;出品ページ&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#eeeeee;" vertex="1" parent="EvjojKm8RSOySv9Axsn9-1">
                     <mxGeometry x="-280" y="540" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="EvjojKm8RSOySv9Axsn9-30" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="EvjojKm8RSOySv9Axsn9-1" target="EvjojKm8RSOySv9Axsn9-28">
