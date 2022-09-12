@@ -9,6 +9,7 @@
 - ruby 2.6.5
 - Ruby on Rails 6.0.0
 - MySQL 14.14
+- 
 - AWS
   - EC2
 - heroku
