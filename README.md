@@ -6,7 +6,7 @@
 ## 使用技術
 
 - HTML,CSS
-- ruby 2.6.5
+- Ruby 2.6.5
 - Ruby on Rails 6.0.0
 - MySQL 14.14
 - JavaScript
