@@ -20,7 +20,7 @@
 - RSpec
   - 単体テスト(model)
 
-## アプリケーションのURL
+## URL
 
 https://furima-38304.herokuapp.com/
 
